@@ -23,4 +23,14 @@ const backpack = {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
+
+  newVolume: function (nVol) {
+    this.volume = nVol;
+  }
 };
+
+console.log("Starting volume:", backpack.volume)
+
+backpack.newVolume(40);
+
+console.log("New volume:", backpack.volume)

@@ -7,3 +7,18 @@
  * - Find an object that has another object inside of it to create a nested object.
  * - Test your objects in the browser console by accessing the entire object and its specific properties.
  */
+const desk = {
+  height: 36,
+  width: 48,
+  color: {
+    top: "brown",
+    bottom: "gray",
+  },
+  chairIn: false,
+  chairPush: function(chairStatus) {
+    this.chairPush = chairStatus;
+  }
+};
+
+console.log("This is the deck object:", desk);
+console.log("The top color is:", desk.color.top);
